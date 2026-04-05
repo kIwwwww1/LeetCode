@@ -1,3 +1,6 @@
+# Время выполнения: O(n+m)
+# Память: O(n+m)
+
 def add_nums(nums1: list[int], nums2: list[int]):
     l1, l2 = 0, 0
     result = []

@@ -1,3 +1,6 @@
+# Время выполнения: O(n)
+# Память: O(1)
+
 def is_palindrom(st: str) -> bool:
     left = 0
     right = len(st) - 1

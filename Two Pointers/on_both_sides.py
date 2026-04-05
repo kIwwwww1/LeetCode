@@ -1,3 +1,6 @@
+# Время выполнения: O(n)
+# Память: O(1)
+
 def two_sum(nums: list[int], target: int) -> list[int]:
 
     left = 0

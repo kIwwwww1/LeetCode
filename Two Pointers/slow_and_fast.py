@@ -1,3 +1,6 @@
+# Время выполнения: O(n)
+# Память: O(1)
+
 def sort_zero(arr: list[int]) -> list[int]:
     slow, fast = 0, 0
 

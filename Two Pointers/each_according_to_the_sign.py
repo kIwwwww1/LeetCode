@@ -1,3 +1,6 @@
+# Время выполнения: O(n+m)
+# Память: O(min(n+m))
+
 def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
     l1, l2 = 0, 0
     result = []
