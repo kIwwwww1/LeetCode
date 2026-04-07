@@ -6,16 +6,16 @@ def compress_range(nums: list[int]) -> list[int]:
     result = []
 
     while l < len(nums):
-        while r + 1 < len(nums) and nums[r] + 1 == nums[r + 1]:
+        while r + 1 < len(nums) and nums[r + 1] == nums[r] + 1:
             r += 1
         
         if l != r:
             result.append(f'{nums[l]}->{nums[r]}')
         else:
-            result.append(f'{nums[l]}')
-        
-        l =  r + 1
-        r = r + 1
+            result.append(nums[l])
+
+        l = r + 1
+        r += 1
 
     return result
 
