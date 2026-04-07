@@ -1,5 +1,5 @@
 # Время выполнения: O(n)
-# Память: O(1)
+# Память: O(k)
 
 def get_palindrom(st: str) -> bool:
     count = {}
