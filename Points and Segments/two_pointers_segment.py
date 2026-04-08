@@ -1,5 +1,5 @@
 # Время выполнения: O(n+m)
-# Память: O(n+m)
+# Память: O(max(n+m))
 
 def is_overlapping(a: list[int], b: list[int]) -> bool:
     return max(a[0], b[0]) <= min(a[1], b[1])
