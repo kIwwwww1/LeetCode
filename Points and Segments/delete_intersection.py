@@ -1,5 +1,5 @@
-# Время выполнения: ...
-# Память: ...
+# Время выполнения: O(n*log(n))
+# Память: O(n)
 
 def delete_intersec(segment: list[list[int]]) -> int:
     segment.sort(key=lambda nums: nums[1])
