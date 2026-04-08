@@ -1,4 +1,4 @@
-# Время выполнения: O(n)
+# Время выполнения: O(n*log(n))
 # Память: O(n)
 
 def is_overlapping(a: list[int], b: list[int]) -> bool:
@@ -9,16 +9,12 @@ def merge_two(a: list[int], b: list[int]) -> list[int]:
 
 def merge(segment: list[list[int]]) -> list[list[int]]:
     segment.sort()
-    print(segment)
 
     result = [segment[0]]
 
     for i in range(1, len(segment)):
         last = result[-1]
-        print(last)
-        print('выше last')
         current = segment[i]
-        print(current)
 
         if is_overlapping(last, current):
             result[-1] = merge_two(last, current)
