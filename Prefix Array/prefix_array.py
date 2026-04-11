@@ -1,3 +1,7 @@
+# Время выполнения: O(n)
+# Память: O(n)
+
+
 class PrefixArray:
     def __init__(self, nums: list[int]) -> None:
         self.prefix = [0]
