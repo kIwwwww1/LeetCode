@@ -2,15 +2,15 @@
 # Память: O(1)
 
 def binary_insert(nums: list[int], target: int) -> int:
-    l, r = 0, len(nums)
+    l, r = 0, len(nums) - 1
     
-    while r - l > 1:
-        m = l + (r - l) // 2
-        if nums[m] <= target:
-            l = m
+    while l <= r:
+        m = (l + r) // 2
+        if nums[m] < target:
+            l = m + 1
         else:
-            r = m
+            r = m - 1
 
-    return r
+    return l
 
-print(binary_insert([0,0,1,1,1,3,3,5,8], 3))
+print(binary_insert([0,0,1,1,1,3,3,5,8], 2))
