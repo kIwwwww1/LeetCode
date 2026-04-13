@@ -16,7 +16,7 @@ class Node:
 
 head = Node(1, Node(2, Node(3, Node(4, None))))
 
-def reverse(head: Node) -> Node:
+def reverse(head: Node) -> Node | None:
     prev = None
     current = head
 
