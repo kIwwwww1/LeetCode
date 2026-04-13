@@ -6,17 +6,18 @@ class Node:
         self.data = data
         self.next = next
 
+
 head = Node(1, Node(2, Node(3, Node(4, None))))
-head = Node(1,None)
-head = Node(1,Node(2, None))
 
-def size(head: Node) -> int:
-    count = 0
-    current = head
+def middle(head: Node) -> Node:
+    slow = head
+    fast = head
 
-    while current:
-        count +=1 
-        current = current.next
-    return count
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
 
-print(size(head))
+    return slow
+
+data = middle(head)
+print(middle(head))
