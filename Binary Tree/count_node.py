@@ -1,5 +1,5 @@
 # Время выполнения: O(n)
-# Память: O(k)
+# Память: O(h)
 
 class TreeNode:
     def  __init__(self, val=0, left=None, right=None) -> None:
